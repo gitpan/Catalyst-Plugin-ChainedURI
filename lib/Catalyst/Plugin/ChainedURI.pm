@@ -3,13 +3,13 @@ BEGIN {
   $Catalyst::Plugin::ChainedURI::AUTHORITY = 'cpan:GETTY';
 }
 BEGIN {
-  $Catalyst::Plugin::ChainedURI::VERSION = '0.001';
+  $Catalyst::Plugin::ChainedURI::VERSION = '0.002';
 }
 # ABSTRACT: Simple way to get an URL to an action from chained catalyst controller
 use strict;
 use warnings;
 
-sub u {
+sub chained_uri {
 	my ( $c, $controller, $action_for, @ca ) = @_;
 	my $control = $c->controller($controller);
 
@@ -68,7 +68,7 @@ Catalyst::Plugin::ChainedURI - Simple way to get an URL to an action from chaine
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -77,8 +77,8 @@ version 0.001
   sub base :Chained('/') :PathPart('') :CaptureArgs(1) :StashArg('language') {
     my ( $c, $language ) = @_;
     ...
-	$c->stash->{language} = $language;
-	...
+    $c->stash->{language} = $language;
+    ...
   }
   
   sub othercapture :Chained('base') :PathPart('') :CaptureArgs(1) { ... }
@@ -86,7 +86,11 @@ version 0.001
   
   # Somewhere
 
-  my $uri = $c->u('Root','final',$othercapture_capturearg,$final_arg);
+  my $uri = $c->chained_uri('Root','final',$othercapture_capturearg,$final_arg);
+
+  # Usage hints
+  
+  $c->stash->{u} = sub { $c->chained_uri(@_) }; # for getting [% u(...) %]
 
 =head1 DESCRIPTION
 
