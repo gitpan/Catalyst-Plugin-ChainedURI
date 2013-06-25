@@ -7,5 +7,5 @@ Makefile.PL
 README
 dist.ini
 lib/Catalyst/Plugin/ChainedURI.pm
-t/00-load.t
+t/load.t
 t/release-pod-syntax.t
