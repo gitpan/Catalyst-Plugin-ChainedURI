@@ -1,10 +1,22 @@
 ==================================================
-Changes from 1739-09-11 00:00:00 +0000 to present.
+Changes from 1740-02-01 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.003 at 2013-06-25 03:42:39 +0000
+version 0.004 at 2013-11-15 00:09:02 +0000
 ------------------------------------------
+
+  Change: ef9cc523f9bb520eaa62c374d865bdd86b25dd8b
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-15 01:07:58 +0000
+
+    New travis config 
+
+  Change: 2e0400fa6d591b7e75516852e936002d9b48f7db
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-15 01:07:33 +0000
+
+    Added current_chained_uri 
 
   Change: eb59ae4722b656160cbed62fdc00df0c51a4e434
   Author: Torsten Raudssus <torsten@raudss.us>

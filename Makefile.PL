@@ -19,13 +19,14 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Catalyst::Plugin::ChainedURI",
-  "PREREQ_PM" => {},
+  "PREREQ_PM" => {
+    "Catalyst::Runtime" => 0
+  },
   "TEST_REQUIRES" => {
     "Test::LoadAllModules" => "0.021",
-    "Test::More" => "0.96",
-    "Test::Simple" => "0.98"
+    "Test::More" => "0.98"
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }
