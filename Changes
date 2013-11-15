@@ -3,8 +3,21 @@ Changes from 1740-02-01 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.004 at 2013-11-15 00:09:02 +0000
+version 0.005 at 2013-11-15 00:40:32 +0000
 ------------------------------------------
+
+  Change: 380bfc16033aa9f949f282210ad321a4d32fe254
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-15 01:38:53 +0000
+
+    Giving example of current_chained_uri with extra args 
+
+  Change: a9b24bd5bc4f4dcef0f7ff2d7c6b10daf2c7c6d5
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-15 01:37:27 +0000
+
+    Forgot params handling on current_chained_uri, also added better
+    params handling to both functions 
 
   Change: ef9cc523f9bb520eaa62c374d865bdd86b25dd8b
   Author: Torsten Raudssus <torsten@raudss.us>
