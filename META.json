@@ -45,7 +45,7 @@
          "web" : "https://github.com/Getty/p5-catalyst-plugin-chaineduri"
       }
    },
-   "version" : "0.006",
+   "version" : "0.007",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018000"

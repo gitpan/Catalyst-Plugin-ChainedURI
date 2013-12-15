@@ -3,8 +3,20 @@ Changes from 1740-03-02 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.006 at 2013-12-15 02:06:43 +0000
+version 0.007 at 2013-12-15 21:50:29 +0000
 ------------------------------------------
+
+  Change: 41f759ff1e21155ccad6853825620fcd5929d7f0
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-12-15 22:50:23 +0000
+
+    Cosmetic 
+
+  Change: f36ccea19febddc92316bddd55acfceec7282afd
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-12-15 22:49:24 +0000
+
+    Ok, now i got the proper check for activate debugging 
 
   Change: 380bfc16033aa9f949f282210ad321a4d32fe254
   Author: Torsten Raudssus <torsten@raudss.us>

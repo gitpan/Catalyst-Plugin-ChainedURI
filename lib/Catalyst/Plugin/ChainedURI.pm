@@ -3,7 +3,7 @@ BEGIN {
   $Catalyst::Plugin::ChainedURI::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Catalyst::Plugin::ChainedURI::VERSION = '0.006';
+  $Catalyst::Plugin::ChainedURI::VERSION = '0.007';
 }
 # ABSTRACT: Simple way to get an URL to an action from chained catalyst controller
 use strict;
@@ -36,9 +36,9 @@ sub chained_uri {
 		'ChainedURI '.$controller.'->'.$action_for.' '.
 		join(',',map { defined $_ ? $_ : "" } @ca).
 		( %params
-			? '{ '.join(' ',map { $_.'='.$params{$_} } keys %params).' }'
+			? ' { '.join(' ',map { $_.'='.$params{$_} } keys %params).' }'
 			: '' )
-	) if $c->log->is_debug;
+	) if $c->debug and $c->log->is_debug;
 
 	my @captures;
 	my $curr = $action;
@@ -103,7 +103,7 @@ Catalyst::Plugin::ChainedURI - Simple way to get an URL to an action from chaine
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 SYNOPSIS
 

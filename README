@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Catalyst-Plugin-ChainedURI,
-version 0.006:
+version 0.007:
 
   Simple way to get an URL to an action from chained catalyst controller
 
